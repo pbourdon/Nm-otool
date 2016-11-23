@@ -6,17 +6,22 @@
 #    By: bde-maze <bde-maze@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/02 13:52:37 by bde-maze          #+#    #+#              #
-#    Updated: 2016/11/23 12:56:21 by pbourdon         ###   ########.fr        #
+#    Updated: 2016/11/23 16:42:58 by pbourdon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = nm
 
-HEADER = includes/shell.h
+HEADER = nmotool.h
 
 FLAGS = -Wall -Wextra -Werror -g3 -o3
 
 SRC = main.c\
+	  ft_get_header.c\
+	  ft_destroy_map.c\
+	  ft_parse_and_open.c\
+	  ft_handle_64.c\
+	  ft_display_sym.c\
 
 OBJDIR = obj/
 
